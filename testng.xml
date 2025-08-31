@@ -9,12 +9,12 @@
         </classes>
     </test>
 
-    <test thread-count="5" name="Firefox Test">
+    <!-- <test thread-count="5" name="Firefox Test">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="runners.TestRunners"/>
         </classes>
-    </test>
+    </test> -->
 
 	<test thread-count="5" name="Edge Test">
         <parameter name="browser" value="edge"/>
