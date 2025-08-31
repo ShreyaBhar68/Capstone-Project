@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 29 15:10:26 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2053 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login with mobile", "Login to BookMyShow"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace125790431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace125790431'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all login UI elements are functional and visible", "Login to BookMyShow"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace987834065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987834065'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to the Gift Card section and validate Check Gift Card Balance icon", "Gift Card Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/giftCard.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace662000775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace662000775'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/giftCard.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login with mobile and OTP", "Login to BookMyShow"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace612635506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace612635506'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/login.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for an invalid city name", "City Search Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2107873140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107873140'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select any movie from recommended movies and validate movie details", "Movie Search Modulein BookMyShow"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/movie.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1709043290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709043290'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/movie.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to upcoming movies and validate "In Cinemas Near You" link", "Movie Search Modulein BookMyShow"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/movie.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1403495948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1403495948'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/movie.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message for invalid gift card voucher", "Gift Card Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/giftCard.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2003311844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2003311844'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.LoginSteps.User_is_on_home_page_and_select_city(LoginSteps.java:18)
+	at ✽.User is on home page and select city &quot;Kolkata&quot;(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/giftCard.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all cities and validate additional city names", "City Search Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace670996243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace670996243'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a valid city name", "City Search Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace131582664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131582664'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select city by choosing a city icon", "City Search Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1397338694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1397338694'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at stepDefinitions.HomePageSteps.user_is_on_the_city_selection_page(HomePageSteps.java:20)
+	at ✽.User is on the city selection page(file:///C:/Users/Shreya%20Bhar/eclipse-workspace/automation-frameword-cucumber/features/home.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@a3d8174</td></tr>
+</table><p>
+</body>
+</html>

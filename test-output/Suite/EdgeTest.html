@@ -1,0 +1,652 @@
+<html>
+<head>
+<title>TestNG:  EdgeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 29 15:13:00 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9998 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login with mobile and OTP", "Login to BookMyShow"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1124317168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1124317168'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to the Gift Card section and validate Check Gift Card Balance icon", "Gift Card Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596009860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596009860'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>1</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all login UI elements are functional and visible", "Login to BookMyShow"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1366212088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1366212088'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate error message for invalid gift card voucher", "Gift Card Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace675833472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace675833472'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select city by choosing a city icon", "City Search Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1104654975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104654975'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a valid city name", "City Search Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace32496853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32496853'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid login with mobile", "Login to BookMyShow"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1095203437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1095203437'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for an invalid city name", "City Search Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace94748968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace94748968'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select any movie from recommended movies and validate movie details", "Movie Search Modulein BookMyShow"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace13643661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13643661'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to upcoming movies and validate "In Cinemas Near You" link", "Movie Search Modulein BookMyShow"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace807239968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807239968'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+<tr>
+<td title='runners.TestRunners.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View all cities and validate additional city names", "City Search Module"</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1973256691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1973256691'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at base.DriverSetup.getDriver(DriverSetup.java:21)
+	at hooks.Hooks.setup(Hooks.java:18)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_139_WINDOWS)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 8 more
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunners@e1de817</td></tr>
+</table><p>
+</body>
+</html>
